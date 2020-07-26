@@ -1,0 +1,24 @@
+pragma solidity ^0.4.17;
+
+contract Land{
+    string name;
+    string place;
+    
+    function Land(string newName, string newPlace)public{
+        name = newName;
+        place = newPlace;
+    }
+
+
+    function setdetails (string newName, string newPlace)public {
+        name = newName;
+        place = newPlace;
+    }
+
+
+    function getdetails() public view returns(string,string){
+        return (name,place);
+        
+    }
+
+}
